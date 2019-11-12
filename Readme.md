@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Савченко](https://up.htmlacademy.ru/adaptive/18/user/869015).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Скубида](https://htmlacademy.ru/profile/id1210299).
 
 ---
 
