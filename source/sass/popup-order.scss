@@ -1,0 +1,119 @@
+.popup-order {
+  position: fixed;
+  width: 320px;
+  box-sizing: border-box;
+
+  @include center-block;
+  padding: 30px 30px 46px;
+  background-color: $white;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  z-index: 10;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    @include center-block;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($white, 0.9);
+    z-index: -1;
+  }
+}
+
+.popup-order--hide {
+  display: none;
+}
+
+.popup-order__title {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.popup-order__descr {
+  margin-top: 0;
+  margin-bottom: 22px;
+  line-height: 2;
+  text-align: center;
+  color: $greyish-brown;
+}
+
+.popup-order__fieldset {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 31px;
+  border: none;
+  text-align: center;
+}
+
+.popup-order__radio {
+  display: none;
+}
+
+.popup-order__label {
+  display: inline-block;
+  width: 75px;
+  height: 48px;
+  margin: 0;
+  margin-right: 7px;
+  border: solid 2px rgba($greyish-brown, 0.1);
+  font-size: 17px;
+  text-align: center;
+  line-height: 52px;
+  font-weight: bold;
+  color: $greyish-brown;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border: solid 2px rgba($greyish-brown, 0.3);
+  }
+}
+
+.popup-order__radio:checked + .popup-order__label {
+  border: solid 2px $seafoam-blue;
+}
+
+.popup-order__link {
+  display: block;
+  width: 100%;
+  padding: 18px 0;
+  background-color: $seafoam-blue;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 0.94;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: $screen-md) {
+  .popup-order {
+    width: 566px;
+  }
+
+  .popup-order__title {
+    width: auto;
+    font-size: 30px;
+    line-height: 1.9;
+  }
+
+  .popup-order__form {
+    padding: 0 78px;
+  }
+
+  .popup-order__label {
+    width: 105px;
+  }
+}

@@ -1,0 +1,35 @@
+.features-table {
+  width: 100%;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+}
+
+.features-table__row {
+  border-bottom: 1px solid $white-four;
+}
+
+.features-table__data {
+  padding: 0;
+  padding-bottom: 8px;
+  padding-top: 7px;
+
+  &:first-child {
+    width: 96px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .features-table {
+    margin-bottom: 55px;
+  }
+
+  .features-table__data {
+    padding: 5px 0;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .features-table {
+    margin-bottom: 108px;
+  }
+}

@@ -1,0 +1,40 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "page-title";
+@import "btn";
+@import "header";
+@import "navigation";
+@import "header-promo";
+@import "features";
+@import "features-table";
+@import "popup-order";
+@import "about";
+@import "review";
+@import "contacts";
+@import "catalog";
+@import "card";
+@import "process";
+@import "form";
+@import "footer";
+@import "footer-socials";
+
+body {
+  margin: 0;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: $black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: $screen-md) {
+  body {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+}

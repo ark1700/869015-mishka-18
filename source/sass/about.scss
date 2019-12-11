@@ -1,0 +1,132 @@
+.about__wrap {
+  @include container;
+  padding: 41px 30px;
+  padding-bottom: 20px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 0 8px;
+  background-size: contain;
+}
+
+.about__title {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__col {
+  margin-top: 0;
+  margin-bottom: 13px;
+  padding-left: 0;
+  list-style: none;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about__item {
+  margin-bottom: 13px;
+  padding-top: 70px;
+  background-repeat: no-repeat;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--flower {
+    background-image: url("../img/icon-feature-flower.svg");
+    background-position: left 8px top 15px;
+  }
+
+  &--money {
+    background-image: url("../img/icon-feature-money.svg");
+    background-position: left 0 top 15px;
+  }
+
+  &--heart {
+    background-image: url("../img/icon-feature-heart.svg");
+    background-position: left 8px top 20px;
+  }
+
+  &--ball {
+    background-image: url("../img/icon-feature-ball.svg");
+    background-position: left 3px top 18px;
+  }
+
+  &--rocket {
+    margin-left: -6px;
+    padding-left: 6px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-position: left 0 top 19px;
+  }
+
+  &--gift {
+    background-image: url("../img/icon-feature-gift.svg");
+    background-position: left 3px top 17px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .about__wrap {
+    padding: 62px 45px;
+    padding-bottom: 67px;
+    background-position: 0 -2px;
+  }
+
+  .about__title {
+    margin-bottom: 33px;
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .about__list {
+    display: flex;
+  }
+
+  .about__col {
+    flex-grow: 1;
+    width: 50%;
+    margin-left: 5px;
+
+    &:last-child {
+      margin-left: -8px;
+    }
+  }
+
+  .about__item {
+    margin-bottom: 40px;
+    font-size: 20px;
+
+    &--flower {
+      background-position: left 8px top 16px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .about__wrap {
+    padding: 100px 219px 75px;
+    background-position: 0 18px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  .about__item {
+    margin-bottom: 39px;
+  }
+}
