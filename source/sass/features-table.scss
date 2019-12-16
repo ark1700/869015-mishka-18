@@ -30,6 +30,10 @@
 
 @media (min-width: $screen-lg) {
   .features-table {
-    margin-bottom: 108px;
+    margin-bottom: 106px;
+  }
+
+  .features-table__data {
+    padding: 3px 0 7px;
   }
 }

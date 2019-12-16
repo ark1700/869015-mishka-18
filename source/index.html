@@ -55,8 +55,14 @@
         <div class="header-promo__wrap">
           <p class="header-promo__text">Милые&nbsp;штуки ручной<br>работы&nbsp;для&nbsp;дома</p>
           <div class="header-promo__links">
-            <a href="#" class="header-promo__link header-promo__link--items">Предметы<br> интерьера</a>
-            <a href="#" class="header-promo__link header-promo__link--toys">Детские<br> игрушки</a>
+            <a href="#" class="header-promo__link header-promo__link--items">
+              Предметы<br> интерьера
+              <svg class="header-promo__link-icon" width="40" height="62"><use xlink:href="img/sprite.svg#icon-interior"></use></svg>
+            </a>
+            <a href="#" class="header-promo__link header-promo__link--toys">
+              Детские<br> игрушки
+              <svg class="header-promo__link-icon" width="60" height="60"><use xlink:href="img/sprite.svg#icon-toy"></use></svg>
+            </a>
           </div>
         </div>
       </div>
@@ -96,21 +102,23 @@
           <a href="#" class="features__order btn">Заказать</a>
         </div>
         <div class="features__popup popup-order popup-order--hide">
-          <h3 class="popup-order__title">Добавить в корзину</h3>
-          <p class="popup-order__descr">Выберите размер:</p>
-          <form method="POST" class="popup-order__form" action="https://echo.htmlacademy.ru">
-            <fieldset class="popup-order__fieldset">
-              <input type="radio" id="s-size" name="size" value="s" class="popup-order__radio" checked>
-              <label for="s-size" class="popup-order__label">S</label>
+          <div class="popup-order__wrap">
+            <h3 class="popup-order__title">Добавить в корзину</h3>
+            <p class="popup-order__descr">Выберите размер:</p>
+            <form method="POST" class="popup-order__form" action="https://echo.htmlacademy.ru">
+              <fieldset class="popup-order__fieldset">
+                <input type="radio" id="s-size" name="size" value="s" class="popup-order__radio" checked>
+                <label for="s-size" class="popup-order__label">S</label>
 
-              <input type="radio" id="m-size" name="size" value="m" class="popup-order__radio">
-              <label for="m-size" class="popup-order__label">M</label>
+                <input type="radio" id="m-size" name="size" value="m" class="popup-order__radio">
+                <label for="m-size" class="popup-order__label">M</label>
 
-              <input type="radio" id="l-size" name="size" value="l" class="popup-order__radio">
-              <label for="l-size" class="popup-order__label">L</label>
-            </fieldset>
-            <button type="submit" class="popup-order__link">Добавить</button>
-          </form>
+                <input type="radio" id="l-size" name="size" value="l" class="popup-order__radio">
+                <label for="l-size" class="popup-order__label">L</label>
+              </fieldset>
+              <button type="submit" class="popup-order__link">Добавить</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -162,7 +170,7 @@
           </tr>
         </table>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056816!2d30.320853351861466!3d59.93871916896505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20101%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1576042025321!5m2!1sen!2sru" width="320" height="450" style="border: 0;" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056816!2d30.320853351861466!3d59.93871916896505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20101%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1576042025321!5m2!1sen!2sru" width="320" height="457" style="border: 0;" allowfullscreen=""></iframe>
         </div>
         <a href="#" class="contacts__btn btn">Напишите нам</a>
       </div>

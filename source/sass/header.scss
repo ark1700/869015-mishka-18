@@ -6,6 +6,9 @@
 .header__top-wrap {
   @include container;
   padding: 22px 31px 16px;
+  box-shadow: 0 1px 0 0 $white-four, inset 0 1px 0 0 $white-four;
+  position: relative;
+  z-index: 2;
 }
 
 .header__logo-link {
@@ -70,6 +73,7 @@
     margin: 0 auto;
     padding: 0;
     margin-bottom: -60px;
+    box-shadow: none;
     position: relative;
     z-index: 2;
   }
@@ -92,9 +96,12 @@
 @media (min-width: $screen-lg) {
   .header__top-wrap {
     margin-bottom: -58px;
+    
   }
 
   .header__top {
+
+    top: 8px;
     left: 50%;
     transform: translateX(-50%);
   }

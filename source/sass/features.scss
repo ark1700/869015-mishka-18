@@ -58,8 +58,8 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 48px;
-    padding-top: 38px;
-    padding-bottom: 55px;
+    padding-top: 33px;
+    padding-bottom: 50px;
   }
 
   .features__header {
@@ -112,15 +112,16 @@
 
 @media (min-width: $screen-lg) {
   .features__wrap {
-    padding-top: 113px;
+    padding-top: 106px;
     padding-left: 225px;
+    padding-bottom: 54px;
   }
 
   .features__header {
     flex-direction: row-reverse;
     justify-content: flex-end;
     margin-left: -180px;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     z-index: 5;
   }
 
@@ -143,7 +144,7 @@
   }
 
   .features__descr {
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     line-height: 1.78;
   }
 }

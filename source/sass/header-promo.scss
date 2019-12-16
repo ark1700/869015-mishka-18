@@ -8,8 +8,8 @@
   background-color: $gray;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: top -17px center;
+  background-size: auto 373px;
   font-size: 26.5px;
   font-weight: bold;
   line-height: 1.11;
@@ -22,6 +22,7 @@
 }
 
 .header-promo__link {
+  position: relative;
   display: block;
   padding: 26px 90px 30px 29px;
   background-color: $seafoam-blue;
@@ -33,33 +34,78 @@
   text-decoration: none;
   transition: all 0.5s;
 
-  &--items {
-    background-image: url("../img/icon-interior.svg");
-    background-position: right 37px center;
-  }
-
-  &--toys {
-    background-color: $greeny-blue;
-    background-image: url("../img/icon-toy.svg");
-    background-position: right 33px center;
-  }
-
   &:hover {
     margin-top: -5px;
     margin-bottom: 5px;
+
+    .header-promo__link-icon {
+      opacity: 0.7;
+    }
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba($white, 0.3);
+
+    .header-promo__link-icon {
+      opacity: 0.3;
+    }
   }
 }
 
+.header-promo__link--items {
+  .header-promo__link-icon {
+    top: 21px;
+    right: 37px;
+  }
+
+  &:hover {
+    background-color: $seafoam-blue-two;
+  }
+}
+
+.header-promo__link--toys {
+  background-color: $greeny-blue;
+
+  .header-promo__link-icon {
+    top: 21px;
+    right: 27px;
+  }
+
+  &:hover {
+    background-color: $greeny-blue-two;
+  }
+}
+
+.header-promo__link-icon {
+  position: absolute;
+  opacity: 0.5;
+}
+
 @media (min-width: $screen-md) {
+  .header-promo__wrap {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 34px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: contain;
+      z-index: 2;
+    }
+  }
+
   .header-promo__text {
     padding-top: 154px;
-    padding-bottom: 375px;
+    padding-bottom: 505px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: top -4px center;
+    background-position: top center;
+    background-size: auto 746px;
     font-size: 43px;
     line-height: 1.16;
 
@@ -70,28 +116,19 @@
 
   .header-promo__links {
     display: flex;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
     padding: 0 50px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -16px;
-      left: 0;
-      width: 100%;
-      height: 45px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: no-repeat;
-      background-position: left 37px center;
-      background-size: contain;
-    }
   }
 
   .header-promo__link {
     flex-grow: 1;
-    padding: 30px 90px 39px 37px;
+    padding: 30px 90px 43px 37px;
     margin-right: 4px;
-    line-height: 1.5;
+    letter-spacing: 0.6px;
+    line-height: 1.55;
 
     &:first-child {
       flex-grow: 0;
@@ -99,16 +136,31 @@
       margin-right: 0;
     }
   }
+
+  .header-promo__link--items {
+    .header-promo__link-icon {
+      top: 30px;
+    }
+  }
+
+  .header-promo__link--toys {
+    .header-promo__link-icon {
+      top: 33px;
+      right: 34px;
+    }
+  }
 }
 
 @media (min-width: $screen-lg) {
-  .header__top {
-    top: 8px;
+  .header-promo__wrap::before {
+    bottom: 0;
+    background-position: top center;
+    background-size: 110%;
   }
 
   .header-promo__text {
     background-image: url("../img/hero-desktop@1x.jpg");
-    padding-bottom: 360px;
+    padding-bottom: 495px;
     font-size: 53px;
     line-height: 1.08;
 
@@ -119,6 +171,7 @@
 
   .header-promo__link {
     margin-right: 0;
+    padding-bottom: 50px;
 
     &:first-child {
       width: 400px;

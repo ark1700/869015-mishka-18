@@ -1,24 +1,23 @@
 .popup-order {
   position: fixed;
-  width: 320px;
-  box-sizing: border-box;
+  z-index: 10;
 
   @include center-block;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($white, 0.9);
+}
+
+.popup-order__wrap {
+  position: absolute;
+
+  @include center-block;
+  width: 320px;
   padding: 30px 30px 46px;
   background-color: $white;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   z-index: 10;
-
-  &::before {
-    content: "";
-    position: absolute;
-
-    @include center-block;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba($white, 0.9);
-    z-index: -1;
-  }
+  box-sizing: border-box;
 }
 
 .popup-order--hide {
@@ -100,6 +99,10 @@
 
 @media (min-width: $screen-md) {
   .popup-order {
+
+  }
+
+  .popup-order__wrap {
     width: 566px;
   }
 

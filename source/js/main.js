@@ -43,9 +43,7 @@ var submitBtnIndexOrderPressHandler = function (evt) {
   }
 }
 
-console.log(indexOrderBtn);
 if (indexOrderBtn) {
-  console.log(indexOrderBtn);
   indexOrderBtn.addEventListener('click', indexOrderBtnPressHandler);
   indexOrderBtn.addEventListener('keydown', indexOrderBtnPressHandler);
 }

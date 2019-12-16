@@ -138,21 +138,23 @@
           </li>
         </ul>
         <div class="features__popup popup-order popup-order--hide">
-          <h3 class="popup-order__title">Добавить в корзину</h3>
-          <p class="popup-order__descr">Выберите размер:</p>
-          <form method="POST" class="popup-order__form" action="https://echo.htmlacademy.ru">
-            <fieldset class="popup-order__fieldset">
-              <input type="radio" id="s-size" name="size" value="s" class="popup-order__radio" checked>
-              <label for="s-size" class="popup-order__label">S</label>
+          <div class="popup-order__wrap">
+            <h3 class="popup-order__title">Добавить в корзину</h3>
+            <p class="popup-order__descr">Выберите размер:</p>
+            <form method="POST" class="popup-order__form" action="https://echo.htmlacademy.ru">
+              <fieldset class="popup-order__fieldset">
+                <input type="radio" id="s-size" name="size" value="s" class="popup-order__radio" checked>
+                <label for="s-size" class="popup-order__label">S</label>
 
-              <input type="radio" id="m-size" name="size" value="m" class="popup-order__radio">
-              <label for="m-size" class="popup-order__label">M</label>
+                <input type="radio" id="m-size" name="size" value="m" class="popup-order__radio">
+                <label for="m-size" class="popup-order__label">M</label>
 
-              <input type="radio" id="l-size" name="size" value="l" class="popup-order__radio">
-              <label for="l-size" class="popup-order__label">L</label>
-            </fieldset>
-            <button type="submit" class="popup-order__link">Добавить</button>
-          </form>
+                <input type="radio" id="l-size" name="size" value="l" class="popup-order__radio">
+                <label for="l-size" class="popup-order__label">L</label>
+              </fieldset>
+              <button type="submit" class="popup-order__link">Добавить</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>

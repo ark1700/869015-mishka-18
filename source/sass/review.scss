@@ -58,6 +58,7 @@
 
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
+    border-left: none;
   }
 
   &:hover {
@@ -150,6 +151,7 @@
 @media (min-width: $screen-lg) {
   .reviews__wrap {
     padding: 70px 130px 95px 225px;
+    margin-bottom: 67px;
     background-position: left 50px top 0;
   }
 
