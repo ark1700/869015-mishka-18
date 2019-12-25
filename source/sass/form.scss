@@ -83,7 +83,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 12px;
     left: 12px;
     width: 16px;
     height: 16px;
@@ -285,7 +285,7 @@
     border-top: none;
     position: relative;
     padding: 50px 0;
-    padding-right: 53px;
+    padding-right: 50px;
     padding-left: 217px;
     margin-bottom: 0;
 
@@ -335,7 +335,7 @@
   .form__radio-input:checked + .form__radio-label::after {
     width: 22px;
     height: 22px;
-    top: 14px;
+    top: 15px;
     left: 15px;
   }
 
@@ -347,10 +347,10 @@
 
   .form__checkbox-label {
     box-sizing: border-box;
-    width: 240px;
+    width: 230px;
     padding: 15px 0 19px 81px;
     margin-bottom: 23px;
-    margin-right: 22px;
+    margin-right: 32px;
     letter-spacing: 1.2px;
 
     &:nth-child(4n) {
@@ -395,10 +395,9 @@
     flex-grow: 1;
     width: auto;
     padding: 15px 16px 14px;
-    margin-right: 4px;
 
     &::placeholder {
-      letter-spacing: 1.6px;
+      letter-spacing: 1.5px;
     }
   }
 
@@ -418,7 +417,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding: 0 53px 0 50px;
+    padding: 0 50px;
     margin-bottom: 50px;
   }
 
@@ -468,7 +467,7 @@
 
   .form__checkbox-label {
     &:nth-child(2n) {
-      margin-right: 23px;
+      margin-right: 33px;
     }
 
     &:nth-child(3n) {

@@ -41,7 +41,7 @@
 .navigation__link-icon {
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 33px;
   transform: translateY(-50%);
   fill: rgba($black, 0.2);
 }
@@ -81,7 +81,7 @@
     &:nth-child(7) {
       order: 2;
       margin-left: auto;
-      margin-right: 26px;
+      margin-right: 21px;
     }
   }
 
@@ -115,7 +115,7 @@
     }
 
     &--basket {
-      padding: 29px 53px 30px 83px;
+      padding: 29px 50px 30px 83px;
     }
 
     &--disabled {
@@ -162,6 +162,11 @@
 
     &:nth-child(2) {
       order: 0;
+      margin-left: 0;
+
+      .navigation__link {
+        padding-left: 34px;
+      }
     }
 
     &:nth-child(3) {
@@ -176,5 +181,9 @@
       margin-left: auto;
       margin-right: 21px;
     }
+  }
+
+  .navigation__link--basket {
+    padding-right: 53px;
   }
 }
