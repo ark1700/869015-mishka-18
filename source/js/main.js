@@ -56,8 +56,9 @@ if (submitBtnIndexOrder) {
 var cardBaskets = document.querySelectorAll(".card__basket");
 
 if (cardBaskets) {
-  cardBaskets.forEach(function (cardBasket) {
+  for (var i = 0; i < cardBaskets.length; i++) {
+    var cardBasket = cardBaskets[i];
     cardBasket.addEventListener('click', indexOrderBtnPressHandler);
     cardBasket.addEventListener('keydown', indexOrderBtnPressHandler);
-  });
+  };
 }
